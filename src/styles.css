@@ -2,3 +2,42 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-strip{
+    justify-content: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.button-strip button{
+    cursor: pointer;
+    width: 128px;
+    height: 128px;
+    border: 0;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: #00000092;
+    color:white;
+    transition: .5s;
+}
+
+.button-strip button:hover{
+    background-color: #000000b3;
+    transition: .5s;
+}
+
+.button-strip button:active{
+    background-color: #000000d3;
+    transition: .5s;
+}

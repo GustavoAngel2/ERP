@@ -3,7 +3,9 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 
 export const routes: Routes = [
-    { path: 'login', component: LoginComponent },
-    { path: '', component:InicioComponent},
-    { path: '**', redirectTo: '' }
+    { path: "", redirectTo: '/login', pathMatch: 'full' },
+    { path: "login", component: LoginComponent },
+    { path: "inicio", component: InicioComponent},
+    { path: '', redirectTo: '/login', pathMatch: 'full' },
+    { path: '**', redirectTo: '/login', pathMatch: 'full' }
 ];

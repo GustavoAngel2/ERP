@@ -29,3 +29,10 @@
     background-color: #000000d3;
     transition: .5s;
 }
+
+mat-drawer{
+    height: 100%;
+    padding: 6px;
+    --mat-sidenav-container-width: 250px!important;
+}
+

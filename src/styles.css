@@ -8,6 +8,8 @@ html{
     --mat-expansion-container-background-color: #5e78eb;
     --mat-toolbar-standard-height: 64px;
     --mat-toolbar-mobile-height: 56px;
+    --mat-sidenav-container-text-color:#fff;
+    --mat-sidenav-container-background-color:#424242;
 }
 
 .content{

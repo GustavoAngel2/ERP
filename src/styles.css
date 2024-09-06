@@ -3,6 +3,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+html{
+    --mat-toolbar-container-background-color: #5e78eb;
+    --mat-expansion-container-background-color: #5e78eb;
+}
+
 .content{
     display: flex;
     flex-direction: column;

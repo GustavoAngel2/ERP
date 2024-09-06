@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { Component } from '@angular/core';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -13,4 +13,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './inicio.component.css',
 })
 export class InicioComponent {
+  
 }

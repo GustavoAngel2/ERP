@@ -6,6 +6,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html{
     --mat-toolbar-container-background-color: #5e78eb;
     --mat-expansion-container-background-color: #5e78eb;
+    --mat-toolbar-standard-height: 64px;
+    --mat-toolbar-mobile-height: 56px;
 }
 
 .content{
@@ -34,11 +36,13 @@ html{
     padding: 4px;
     background-color: #00000092;
     color:white;
+    font-size: 16px;
     transition: .5s;
 }
 
 .button-strip button:hover{
     background-color: #000000b3;
+    font-size: 24px;
     transition: .5s;
 }
 

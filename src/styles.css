@@ -1,20 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-html{
-    --mat-toolbar-container-background-color: #5e78eb;
-    --mat-expansion-container-background-color: #5e78eb;
-}
-
-.content{
+/* Estilos globales */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  /* Variables para colores personalizados */
+  html {
+    --mat-toolbar-container-background-color: #fc9700;
+    --mat-expansion-container-background-color: #fc9700;
+  }
+  
+  /* Estilo del contenedor principal */
+  .content {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.button-strip{
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out; /* Animación al cargar el contenido */
+  }
+  
+  /* Contenedor de botones */
+  .button-strip {
     justify-content: center;
     width: 100%;
     overflow-x: auto;
@@ -23,9 +30,10 @@ html{
     display: flex;
     flex-direction: row;
     gap: 12px;
-}
-
-.button-strip button{
+  }
+  
+  /* Estilo de los botones */
+  .button-strip button {
     cursor: pointer;
     width: 128px;
     height: 128px;
@@ -33,20 +41,32 @@ html{
     border-radius: 5px;
     padding: 4px;
     background-color: #00000092;
-    color:white;
-    transition: .5s;
-}
-
-.button-strip button:hover{
-    background-color: #000000b3;
-    transition: .5s;
-}
-
-.button-strip button:active{
+    color: white;
+    transition: background-color 1.1s, transform 1.1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover: Cambio de color y efecto de elevación */
+  .button-strip button:hover {
+    background-color: #ffffffb3;
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px); /* Eleva el botón */
+  }
+  
+  /* Activo: Cambio de color y ligera reducción */
+  .button-strip button:active {
     background-color: #000000d3;
-    transition: .5s;
-}
-
-.section-title{
+    transform: scale(0.95); /* Pequeña reducción al hacer clic */
+  }
+  
+  /* Título de las secciones */
+  .section-title {
     margin-left: 6px;
-}
+  }
+  
+  /* Animación de desvanecimiento */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
